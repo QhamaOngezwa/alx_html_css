@@ -1,5 +1,5 @@
 A fully structured and responsive landing page built using HTML5 and CSS3, following semantic markup principles and clean component organization.
-![Screenshot of the project](/images/advanced%20html.JPG)
+![Screenshot of the project](css_advanced/images/advanced%20html.JPG)
 
 ## Feature
 
