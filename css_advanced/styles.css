@@ -1,9 +1,11 @@
-body {
+.container {
   background-image: url("images/background.png");
-  background-size: 1440px 1093px;
   background-repeat: no-repeat;
+  margin: 0 auto;
+  align-items: center;
+  width: 1440px;
+  height: 1093px;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -11,11 +13,14 @@ nav {
 nav img {
   width: 167px;
   height: 29px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 40px;
+  margin-right: 40px;
 }
 nav ul li a {
   text-decoration: none;
@@ -35,11 +40,16 @@ nav ul li a {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
   font-size: 100px;
+  margin-top: 120px;
   color: #ffffff;
 }
 .get-schooled span {
   font-size: 16px;
   color: #ffffff;
+}
+.get-schooled .span {
+  display: flex;
+  gap: 40px;
 }
 .get-schooled button {
   background-color: #c271ff;
@@ -62,6 +72,9 @@ nav ul li a {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 32px;
   font-weight: 300;
+}
+.learn-from-pros strong {
+  color: #c271ff;
 }
 .pros-block {
   display: flex;
@@ -92,10 +105,8 @@ nav ul li a {
   line-height: 24px;
 }
 .testimonial-block {
-  margin-top: 218px;
   display: flex;
-  gap: 40px;
-  max-width: 1500px;
+  width: 1440px;
   height: 392px;
   justify-content: center;
   background-color: #c271ff;
@@ -104,13 +115,222 @@ nav ul li a {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  align-self: center;
+  margin-top: 110px;
+  margin-left: 200px;
 }
-.testimonial-block blockquote {
-  width: 400px;
+.blockquote {
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+.blockquote blockquote {
+  margin-top: 120px;
+  margin-right: 200px;
+  font-weight: lighter;
+}
+.blockquote h3,
+em {
+  vertical-align: top;
+  line-height: 0;
+  margin-left: 40px;
+}
+.blockquote h3 {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.blockquote em {
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
   color: #ffffff;
+}
+.popular-tutorials {
+  margin-top: 80px;
+}
+.popular-tutorials h2 {
+  color: #000000;
+  font-size: 32px;
+  font-weight: lighter;
+  text-align: center;
+}
+.popular-tutorials strong {
+  color: #c271ff;
+}
+.tutorial-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+.tutorial-card {
+  width: 255px;
+  height: 335px;
+  padding: 20px;
+}
+.tutorial-card img {
+  width: 255px;
+  height: 154px;
+  border-radius: 4px 4px 0 0;
+}
+.tutorial-card h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 10px;
+}
+.tutorial-card p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #0000007c;
+  margin-top: 10px;
+}
+.tutorial-card .author-info {
+  display: flex;
+  gap: 10px;
+}
+.tutorial-card .author-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.tutorial-card .author-info h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #c271ff;
+  margin-top: 16px;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating .rating-stars {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  color: #c271ff;
+}
+.rating-stars .grey-star {
+  color: #131213;
+}
+.rating p {
+  font-size: 14px;
+  color: #c271ff;
+}
+.membership-block {
+  text-align: center;
+  width: 1440px;
+  height: 502px;
+  color: #ffffff;
+  background-color: #071629;
+}
+.membership-block h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+  padding-top: 60px;
+}
+.membership-block strong {
+  color: #c271ff;
+}
+.membership-block .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  justify-items: center;
+}
+.membership {
+  width: 257px;
+  height: 153px;
+  margin-top: 40px;
+  justify-items: center;
+}
+.membership img {
+  width: 44px;
+  height: 35px;
+}
+.membership h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.membership p {
+  font-size: 14px;
+  font-weight: 400;
+  width: 212px;
+}
+.membership-block button {
+  background-color: #c271ff;
+  color: #ffffff;
+  border: none;
+  width: 200px;
+  height: 44px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  margin-top: 40px;
+}
+.frequently-asked-questions {
+  width: 920px;
+  height: 707;
+  margin: 0 auto;
+}
+.frequently-asked-questions h2 {
+  font-size: 60px;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 80px;
+}
+.faq-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-top: 40px;
+  justify-items: center;
+}
+.questions {
+  width: 350px;
+  height: 242px;
+}
+.questions h3 {
+  font-size: 16px;
+  color: #071629;
+}
+.questions p {
+  font-size: 14px;
+  color: #071629;
+}
+.footer {
+  width: 1440px;
+  height: 249px;
+  background-color: #071629;
+  color: #ffffff;
+}
+.footer .footer-info {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  gap: 500px;
+}
+.footer-info img {
+  width: 169px;
+  height: 30px;
+}
+.footer-info .social-media {
+  display: flex;
+}
+.footer-info .social-media i {
+  width: 30px;
+  height: 30px;
+}
+.footer p {
+  text-align: center;
+  margin-top: 70px;
+  font-weight: lighter;
 }
